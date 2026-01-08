@@ -15,10 +15,13 @@ import {
   CardSkills,
   CardTitle,
 } from "@/components/ui/card";
+import { getCDNImageURL } from "@/lib/utils";
 
-import ovioImage from "../../assets/ovio.jpg";
-import portfolioImage from "../../assets/portfolio-website.png";
 import styles from "./Main.module.css";
+
+const IMG_HEIGHT = 200;
+const ovioImage = getCDNImageURL("ovio_irqhyp", IMG_HEIGHT);
+const portfolioImage = getCDNImageURL("portfolio-website_r0cuwy", IMG_HEIGHT);
 
 const Projects = () => (
   <div className={styles.section}>
