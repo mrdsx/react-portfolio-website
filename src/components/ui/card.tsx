@@ -36,7 +36,7 @@ const CardDescription = ({ children }: React.PropsWithChildren) => (
 );
 
 const CardSkills = ({ children }: React.PropsWithChildren) => (
-  <div className="flex flex-wrap gap-2 *:size-6">{children}</div>
+  <div className="flex flex-wrap gap-2">{children}</div>
 );
 
 const CardGithubLink = ({ githubURL }: { githubURL?: string }) => {

@@ -25,7 +25,11 @@ const Tooltip = ({
 const TooltipTrigger = ({
   ...props
 }: React.ComponentProps<typeof TooltipPrimitive.Trigger>) => (
-  <TooltipPrimitive.Trigger data-slot="tooltip-trigger" {...props} />
+  <TooltipPrimitive.Trigger
+    className="[&>svg]:size-6"
+    data-slot="tooltip-trigger"
+    {...props}
+  />
 );
 
 const TooltipContent = ({
