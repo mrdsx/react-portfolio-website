@@ -32,4 +32,4 @@ And the list of loading speeds with disabled cache and 2G/GPRS
 
 ### [React + Astro](https://portfolio-website-ten-pi-55.vercel.app/)
 
-**React + Astro** remains the only maintained and deployed portfolio.
+**React + Astro** will remain the only maintained and deployed portfolio.
