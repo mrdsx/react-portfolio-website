@@ -1,0 +1,31 @@
+---
+import type { GlassButtonProps } from "@/components/glass-button.astro";
+import GlassButton from "@/components/glass-button.astro";
+
+const { size, ...props }: GlassButtonProps = Astro.props;
+---
+
+<GlassButton
+  className="skill-button"
+  data-clicked="false"
+  size={size}
+  {...props}
+>
+  <slot />
+</GlassButton>
+
+<style>
+  @reference "@/global.css";
+
+  .skill-button {
+    @apply cursor-pointer transition-colors;
+  }
+
+  .skill-button[data-clicked="true"] {
+    @apply bg-gray-800 hover:bg-gray-700;
+  }
+
+  .skill-button[data-clicked="true"]:hover {
+    @apply bg-gray-700;
+  }
+</style>

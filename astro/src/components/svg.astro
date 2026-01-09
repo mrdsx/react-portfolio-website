@@ -1,0 +1,10 @@
+---
+import type { SvgProps } from "@/lib/types";
+import { cn } from "@/lib/utils";
+
+const { class: className, ...props }: SvgProps = Astro.props;
+---
+
+<svg class={cn("max-w-10 min-w-4", className)} {...props}>
+  <slot />
+</svg>

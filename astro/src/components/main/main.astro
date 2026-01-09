@@ -1,0 +1,28 @@
+---
+import Technologies from "@/components/main/technologies.astro";
+import About from "./about.astro";
+import Projects from "./projects.astro";
+---
+
+<main class="flex flex-col gap-8">
+  <About />
+  <Technologies />
+  <Projects />
+</main>
+
+<script>
+  const skillButtons = document.querySelectorAll(".skill-button");
+
+  skillButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const isClicked = button.getAttribute("data-clicked") === "true";
+      button.setAttribute("data-clicked", (!isClicked).toString());
+
+      if (isClicked) {
+        button.classList.remove("bg-gray-800", "hover:bg-gray-700");
+      } else {
+        button.classList.add("bg-gray-800", "hover:bg-gray-700");
+      }
+    });
+  });
+</script>

@@ -1,0 +1,23 @@
+---
+import GithubIcon from "@/components/icons/github-icon.astro";
+
+type Props = {
+  githubURL?: string;
+};
+
+const { githubURL } = Astro.props;
+---
+
+{
+  githubURL ? (
+    <a class="btn flex-1" href={githubURL} target="_blank">
+      <GithubIcon />
+      Github
+    </a>
+  ) : (
+    <button class="btn flex-1" disabled>
+      <GithubIcon />
+      Github
+    </button>
+  )
+}

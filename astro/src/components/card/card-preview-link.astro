@@ -1,0 +1,14 @@
+---
+import { EyeIcon } from "@/components/icons";
+
+type Props = {
+  previewURL: string;
+};
+
+let { previewURL } = Astro.props;
+---
+
+<a class="btn flex-1" href={previewURL} target="_blank">
+  <EyeIcon />
+  Preview
+</a>

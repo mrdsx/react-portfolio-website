@@ -1,0 +1,11 @@
+---
+type Props = {
+  content: string;
+};
+
+const { content } = Astro.props;
+---
+
+<div class="[&>svg]:size-6" data-tooltip={content}>
+  <slot />
+</div>
