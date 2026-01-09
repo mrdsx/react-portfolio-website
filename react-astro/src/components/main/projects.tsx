@@ -33,8 +33,8 @@ const Projects = () => (
           <CardImage src={ovioImage} alt="Olympiad Preparation" />
           <CardTitle>Olympiad Preparation</CardTitle>
           <CardDescription>
-            Olympiad Preparation is handy tool, developed for preparing to
-            olympiad "ОВИО Наше наследие"
+            Olympiad Preparation is production-ready and actively maintained
+            app, developed for preparing to olympiad "ОВИО Наше наследие"
           </CardDescription>
         </CardHeader>
         <CardSkills>

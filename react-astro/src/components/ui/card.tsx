@@ -32,7 +32,7 @@ const CardTitle = ({ children }: React.PropsWithChildren) => (
 );
 
 const CardDescription = ({ children }: React.PropsWithChildren) => (
-  <p className="text-justify text-sm">{children}</p>
+  <p className="text-justify text-xs">{children}</p>
 );
 
 const CardSkills = ({ children }: React.PropsWithChildren) => (
