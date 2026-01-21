@@ -61,7 +61,7 @@ const CardGithubLink = ({ githubURL }: { githubURL?: string }) => {
 
 const CardPreviewLink = ({ previewURL }: { previewURL: string }) => (
   <Button className={LINK_CLASSNAME} asChild>
-    <a href={previewURL} target="_blank">
+    <a href={previewURL}>
       <EyeIcon />
       Preview
     </a>
