@@ -9,7 +9,7 @@ const SVGTooltip = ({
   children,
 }: { content: string } & React.PropsWithChildren) => (
   <Tooltip>
-    <TooltipTrigger asChild>
+    <TooltipTrigger className="[&_svg]:size-6" asChild>
       <span>{children}</span>
     </TooltipTrigger>
     <TooltipContent>{content}</TooltipContent>

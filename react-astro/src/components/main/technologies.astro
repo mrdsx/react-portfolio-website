@@ -1,0 +1,55 @@
+---
+import AstroSkill from "@/components/skills/astro";
+import CSSSkill from "@/components/skills/css";
+import FastAPISkill from "@/components/skills/fastapi";
+import HTMLSkill from "@/components/skills/html";
+import JavascriptSkill from "@/components/skills/javascript";
+import NetlifySkill from "@/components/skills/netlify";
+import PostgreSQLSkill from "@/components/skills/postgresql";
+import PyTestSkill from "@/components/skills/pytest";
+import PythonSkill from "@/components/skills/python";
+import RailwaySkill from "@/components/skills/railway";
+import ReactSkill from "@/components/skills/react";
+import RenderSkill from "@/components/skills/render";
+import SQLiteSkill from "@/components/skills/sqlite";
+import TailwindSkill from "@/components/skills/tailwindcss";
+import TypescriptSkill from "@/components/skills/typescript";
+import VercelSkill from "@/components/skills/vercel";
+
+import styles from "./Main.module.css";
+---
+
+<div class={styles.section}>
+  <h2 class={styles.sectionHeading}>Technologies</h2>
+  <div class="flex flex-col gap-2">
+    <h3 class="min-w-30 font-semibold">Frontend</h3>
+    <div class="flex flex-wrap gap-2">
+      <HTMLSkill client:load />
+      <CSSSkill client:load />
+      <JavascriptSkill client:load />
+      <TypescriptSkill client:load />
+      <ReactSkill client:load />
+      <AstroSkill client:load />
+      <TailwindSkill client:load />
+    </div>
+  </div>
+  <div class="flex flex-col gap-2">
+    <h3 class="min-w-30 font-semibold">Backend</h3>
+    <div class="flex flex-wrap gap-2">
+      <PythonSkill client:load />
+      <FastAPISkill client:load />
+      <PostgreSQLSkill client:load />
+      <SQLiteSkill client:load />
+      <PyTestSkill client:load />
+    </div>
+  </div>
+  <div class="flex flex-col gap-2">
+    <h3 class="min-w-30 font-semibold">Deployment</h3>
+    <div class="flex flex-wrap gap-2">
+      <VercelSkill client:load />
+      <NetlifySkill client:load />
+      <RenderSkill client:load />
+      <RailwaySkill client:load />
+    </div>
+  </div>
+</div>

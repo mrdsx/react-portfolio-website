@@ -1,7 +1,7 @@
 ---
 import Footer from "@/components/footer.astro";
 import Header from "@/components/header/header.astro";
-import Main from "@/components/main/main";
+import Main from "@/components/main/main.astro";
 import "@/globals.css";
 ---
 
@@ -18,7 +18,7 @@ import "@/globals.css";
     <div class="flex min-h-screen justify-center bg-gray-900">
       <div class="w-[90vw] md:w-[80vw]">
         <Header />
-        <Main client:idle />
+        <Main />
         <Footer />
       </div>
     </div>
