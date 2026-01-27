@@ -63,7 +63,7 @@ const CardPreviewLink = ({ previewURL }: { previewURL: string }) => (
   <Button className={LINK_CLASSNAME} asChild>
     <a href={previewURL}>
       <EyeIcon />
-      Preview
+      View
     </a>
   </Button>
 );
