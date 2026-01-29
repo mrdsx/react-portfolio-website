@@ -1,6 +1,7 @@
 ---
 import AstroIcon from "@/components/icons/astro";
 import FastAPIIcon from "@/components/icons/fastapi";
+import PyTestIcon from "@/components/icons/pytest";
 import PythonIcon from "@/components/icons/python";
 import ReactIcon from "@/components/icons/react";
 import TailwindIcon from "@/components/icons/tailwindcss";
@@ -42,17 +43,20 @@ const portfolioImage = getCDNImageURL("portfolio-website_r0cuwy", IMG_HEIGHT);
         <SVGTooltip client:visible content="Typescript">
           <TypescriptIcon />
         </SVGTooltip>
-        <SVGTooltip client:visible content="React">
-          <ReactIcon />
-        </SVGTooltip>
         <SVGTooltip client:visible content="TailwindCSS">
           <TailwindIcon />
+        </SVGTooltip>
+        <SVGTooltip client:visible content="React">
+          <ReactIcon />
         </SVGTooltip>
         <SVGTooltip client:visible content="Python">
           <PythonIcon />
         </SVGTooltip>
         <SVGTooltip client:visible content="FastAPI">
           <FastAPIIcon />
+        </SVGTooltip>
+        <SVGTooltip client:visible content="PyTest">
+          <PyTestIcon />
         </SVGTooltip>
       </CardSkills>
       <CardFooter>
@@ -73,14 +77,14 @@ const portfolioImage = getCDNImageURL("portfolio-website_r0cuwy", IMG_HEIGHT);
         <SVGTooltip client:visible content="Typescript">
           <TypescriptIcon />
         </SVGTooltip>
+        <SVGTooltip client:visible content="TailwindCSS">
+          <TailwindIcon />
+        </SVGTooltip>
         <SVGTooltip client:visible content="React">
           <ReactIcon />
         </SVGTooltip>
         <SVGTooltip client:visible content="Astro">
           <AstroIcon />
-        </SVGTooltip>
-        <SVGTooltip client:visible content="TailwindCSS">
-          <TailwindIcon />
         </SVGTooltip>
       </CardSkills>
       <CardFooter>
