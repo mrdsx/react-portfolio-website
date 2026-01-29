@@ -2,14 +2,14 @@ import SVG from "@/components/svg";
 
 const SupabaseIcon = () => (
   <SVG xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
-    <g clip-path="url(#a)">
+    <g clipPath="url(#a)">
       <path
         fill="url(#b)"
         d="M57.894 98.338c-2.554 3.217-7.734 1.454-7.796-2.654l-.9-60.082h40.4c7.316 0 11.397 8.452 6.847 14.183z"
       />
       <path
         fill="url(#c)"
-        fill-opacity=".2"
+        fillOpacity=".2"
         d="M57.894 98.338c-2.554 3.217-7.734 1.454-7.796-2.654l-.9-60.082h40.4c7.316 0 11.397 8.452 6.847 14.183z"
       />
       <path
@@ -26,8 +26,8 @@ const SupabaseIcon = () => (
         y2="63.983"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#249361" />
-        <stop offset="1" stop-color="#3ecf8e" />
+        <stop stopColor="#249361" />
+        <stop offset="1" stopColor="#3ecf8e" />
       </linearGradient>
       <linearGradient
         id="c"
@@ -38,7 +38,7 @@ const SupabaseIcon = () => (
         gradientUnits="userSpaceOnUse"
       >
         <stop />
-        <stop offset="1" stop-opacity="0" />
+        <stop offset="1" stopOpacity="0" />
       </linearGradient>
       <clipPath id="a">
         <path fill="#fff" d="M0 0h100v100H0z" />

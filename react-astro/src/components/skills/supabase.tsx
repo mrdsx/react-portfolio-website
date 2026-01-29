@@ -1,6 +1,5 @@
+import SupabaseIcon from "@/components/icons/supabase";
 import Skill from "@/components/skill";
-
-import SupabaseIcon from "../icons/supabase";
 
 const SupabaseSkill = ({ ...props }: React.ComponentProps<typeof Skill>) => (
   <Skill {...props}>
