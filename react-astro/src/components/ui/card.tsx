@@ -59,7 +59,7 @@ const CardGithubLink = ({ githubURL }: { githubURL?: string }) => {
   );
 };
 
-const CardPreviewLink = ({ previewURL }: { previewURL: string }) => (
+const CardProjectLink = ({ previewURL }: { previewURL: string }) => (
   <Button className={LINK_CLASSNAME} asChild>
     <a href={previewURL}>
       <EyeIcon />
@@ -75,7 +75,7 @@ export {
   CardGithubLink,
   CardHeader,
   CardImage,
-  CardPreviewLink,
+  CardProjectLink,
   CardSkills,
   CardTitle,
 };
