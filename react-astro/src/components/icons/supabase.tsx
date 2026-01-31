@@ -1,14 +1,18 @@
 import SVG from "@/components/svg";
 
+const idA = "supabase-a";
+const idB = "supabase-b";
+const idC = "supabase-c";
+
 const SupabaseIcon = () => (
   <SVG xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
-    <g clipPath="url(#a)">
+    <g clipPath={`url(#${idA})`}>
       <path
-        fill="url(#b)"
+        fill={`url(#${idB})`}
         d="M57.894 98.338c-2.554 3.217-7.734 1.454-7.796-2.654l-.9-60.082h40.4c7.316 0 11.397 8.452 6.847 14.183z"
       />
       <path
-        fill="url(#c)"
+        fill={`url(#${idC})`}
         fillOpacity=".2"
         d="M57.894 98.338c-2.554 3.217-7.734 1.454-7.796-2.654l-.9-60.082h40.4c7.316 0 11.397 8.452 6.847 14.183z"
       />
@@ -19,7 +23,7 @@ const SupabaseIcon = () => (
     </g>
     <defs>
       <linearGradient
-        id="b"
+        id={idB}
         x1="49.198"
         x2="85.103"
         y1="48.924"
@@ -30,7 +34,7 @@ const SupabaseIcon = () => (
         <stop offset="1" stopColor="#3ecf8e" />
       </linearGradient>
       <linearGradient
-        id="c"
+        id={idC}
         x1="33.279"
         x2="49.654"
         y1="27.129"
@@ -40,7 +44,7 @@ const SupabaseIcon = () => (
         <stop />
         <stop offset="1" stopOpacity="0" />
       </linearGradient>
-      <clipPath id="a">
+      <clipPath id={idA}>
         <path fill="#fff" d="M0 0h100v100H0z" />
       </clipPath>
     </defs>

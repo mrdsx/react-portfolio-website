@@ -1,14 +1,18 @@
 import SVG from "@/components/svg";
 
+const idA = "cypress-a";
+const idB = "cypress-b";
+const idC = "cypress-c";
+
 const CypressIcon = () => (
   <SVG xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
-    <g clipPath="url(#a)">
+    <g clipPath={`url(#${idA})`}>
       <path
         fill="#69d3a7"
         d="M4.78 63.246A50 50 0 0 1 3 50.001C3 29.497 15.878 10.75 35.047 3.355L37.56 9.86C21.06 16.225 9.977 32.356 9.977 50a43 43 0 0 0 1.528 11.398z"
       />
       <path
-        fill="url(#b)"
+        fill={`url(#${idB})`}
         d="M91.44 30.193C83.98 15.873 69.295 6.974 53.127 6.974a43.1 43.1 0 0 0-16.538 3.271l-2.674-6.44A50 50 0 0 1 53.128-.001c18.783 0 35.835 10.332 44.5 26.971z"
       />
       <path
@@ -20,13 +24,13 @@ const CypressIcon = () => (
         d="m80.721 33.486-9.684 24.503-9.747-24.503h-7.975l13.671 33.443-9.726 23.588 6.972 1.387 24.024-58.418z"
       />
       <path
-        fill="url(#c)"
+        fill={`url(#${idC})`}
         d="m58.507 87.477-1.699 4.111a2.26 2.26 0 0 1-1.977 1.403c-.574.021-1.152.037-1.736.037-19.995-.01-37.685-14.106-42.068-33.53L4.22 61.036c2.46 10.895 8.633 20.783 17.384 27.85C30.457 96.033 41.609 99.978 53.019 100h.101q1.004-.001 2-.043a9.26 9.26 0 0 0 8.145-5.718l2.218-5.375z"
       />
     </g>
     <defs>
       <linearGradient
-        id="b"
+        id={idB}
         x1="47.912"
         x2="85.964"
         y1="-3.229"
@@ -37,7 +41,7 @@ const CypressIcon = () => (
         <stop offset=".988" stopColor="#58d09e" stopOpacity="0" />
       </linearGradient>
       <linearGradient
-        id="c"
+        id={idC}
         x1="2.466"
         x2="75.162"
         y1="72.752"
@@ -47,7 +51,7 @@ const CypressIcon = () => (
         <stop offset=".077" stopColor="#58d09e" />
         <stop offset=".762" stopColor="#1b1e2e" />
       </linearGradient>
-      <clipPath id="a">
+      <clipPath id={idA}>
         <path fill="#fff" d="M0 0h100v100H0z" />
       </clipPath>
     </defs>
