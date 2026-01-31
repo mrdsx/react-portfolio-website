@@ -8,7 +8,7 @@ const LINK_CLASSNAME = "flex-1";
 
 const Card = ({ children }: React.PropsWithChildren) => (
   <GlassButton
-    className="w-[90vw] flex-col gap-4 hover:bg-gray-900 hover:not-has-[img:hover]:bg-gray-800 sm:max-w-[300px] sm:min-w-[250px] [&>div]:w-full"
+    className="w-[90vw] flex-col gap-2.5 hover:bg-gray-900 hover:not-has-[img:hover]:bg-gray-800 sm:max-w-[300px] sm:min-w-[250px] [&>div]:w-full"
     size="lg"
   >
     {children}
