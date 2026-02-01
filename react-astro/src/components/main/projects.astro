@@ -1,6 +1,8 @@
 ---
 import AstroIcon from "@/components/icons/astro";
+import CypressIcon from "@/components/icons/cypress";
 import FastAPIIcon from "@/components/icons/fastapi";
+import GithubActionsIcon from "@/components/icons/github-actions";
 import PyTestIcon from "@/components/icons/pytest";
 import PythonIcon from "@/components/icons/python";
 import ReactIcon from "@/components/icons/react";
@@ -48,6 +50,12 @@ const portfolioImage = getCDNImageURL("portfolio-website_r0cuwy", IMG_HEIGHT);
         </SVGTooltip>
         <SVGTooltip client:visible content="React">
           <ReactIcon />
+        </SVGTooltip>
+        <SVGTooltip client:visible content="Cypress">
+          <CypressIcon />
+        </SVGTooltip>
+        <SVGTooltip client:visible content="GitHub Actions">
+          <GithubActionsIcon />
         </SVGTooltip>
         <SVGTooltip client:visible content="Python">
           <PythonIcon />
