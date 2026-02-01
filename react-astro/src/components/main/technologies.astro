@@ -3,6 +3,7 @@ import AstroSkill from "@/components/skills/astro";
 import CSSSkill from "@/components/skills/css";
 import CypressSkill from "@/components/skills/cypress";
 import FastAPISkill from "@/components/skills/fastapi";
+import GithubActionsSkill from "@/components/skills/github-actions";
 import HTMLSkill from "@/components/skills/html";
 import JavascriptSkill from "@/components/skills/javascript";
 import NetlifySkill from "@/components/skills/netlify";
@@ -52,6 +53,7 @@ import styles from "./Main.module.css";
   <div class="flex flex-col gap-2">
     <h3 class="min-w-30 font-semibold">Deployment</h3>
     <div class="flex flex-wrap gap-2">
+      <GithubActionsSkill client:load />
       <VercelSkill client:load />
       <NetlifySkill client:load />
       <RenderSkill client:load />
