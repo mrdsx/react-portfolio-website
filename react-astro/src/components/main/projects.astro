@@ -8,6 +8,7 @@ import PythonIcon from "@/components/icons/python";
 import ReactIcon from "@/components/icons/react";
 import TailwindIcon from "@/components/icons/tailwindcss";
 import TypescriptIcon from "@/components/icons/typescript";
+import VitestIcon from "@/components/icons/vitest";
 import SVGTooltip from "@/components/svg-tooltip";
 import {
   Card,
@@ -51,11 +52,11 @@ const portfolioImage = getCDNImageURL("portfolio-website_r0cuwy", IMG_HEIGHT);
         <SVGTooltip client:visible content="React">
           <ReactIcon />
         </SVGTooltip>
+        <SVGTooltip client:visible content="Vitest">
+          <VitestIcon />
+        </SVGTooltip>
         <SVGTooltip client:visible content="Cypress">
           <CypressIcon />
-        </SVGTooltip>
-        <SVGTooltip client:visible content="GitHub Actions">
-          <GithubActionsIcon />
         </SVGTooltip>
         <SVGTooltip client:visible content="Python">
           <PythonIcon />
@@ -65,6 +66,9 @@ const portfolioImage = getCDNImageURL("portfolio-website_r0cuwy", IMG_HEIGHT);
         </SVGTooltip>
         <SVGTooltip client:visible content="PyTest">
           <PyTestIcon />
+        </SVGTooltip>
+        <SVGTooltip client:visible content="GitHub Actions">
+          <GithubActionsIcon />
         </SVGTooltip>
       </CardSkills>
       <CardFooter>
