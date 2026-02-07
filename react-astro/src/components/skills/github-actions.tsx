@@ -6,7 +6,7 @@ const GithubActionsSkill = ({
 }: React.ComponentProps<typeof Skill>) => (
   <Skill {...props}>
     <GithubActionsIcon />
-    Actions
+    GitHub Actions
   </Skill>
 );
 
